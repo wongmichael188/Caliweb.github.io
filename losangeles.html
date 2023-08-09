@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Los Angeles</title>
+</head>
+<body>
+
+<!--Navigation -->
+<nav>
+  <div class="nav-title">California</div>
+  <ul class="nav-items">
+      <li class="nav-item"><a href="index.html">Home</a></li>
+      <li class="nav-item"><a href="locations.html">Locations</a></li>
+      <li class="nav-item collapse-arrow">Visiting</a>
+          <ul class="collapse-content">
+              <li><a href="losangeles.html">Los Angeles</a></li>
+              <li><a href="orangecounty.html">Orange County</a></li>
+              <li><a href="sacramento.html">Sacramento</a></li>
+          </ul>
+      </li>
+      <li class="nav-item"><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+ <!--Body Text-->
+ <div class="big-rectangular-box">
+  <div class="grid-item">
+    <h2>Los Angeles</h2>
+    <p>The population in all five areas of Los Angeles has about 3.849 Million people.</p>
+    <img src="img\la-logo.jpeg" alt="logo">
+    <footer>
+      <a href="https://www.latimes.com/entertainment-arts/story/2021-07-07/los-angeles-new-tourism-logo-is-very-80s-ocean-pacific">image source</a>
+    </footer>
+  </div>
+
+  <div class="grid-item">
+    <h2>The year the city incorporated</h2>
+    <p>Los Angeles was incorporated in the year of April 4, 1850.</p>
+    <img src="img\La-img.jpg" alt="la">
+    <footer>
+      <a href="https://en.wikipedia.org/wiki/History_of_Los_Angeles">Image source</a>
+    </footer>
+  </div>
+  <div class="grid-item">
+    <h2>Region of the state in which the city is located</h2>
+    <p>The region of Los Angeles is located in the Southern side of California.</p>
+    <img src="img\la-region.webp" alt="region">
+    <footer>
+      <a href="https://www.discoverlosangeles.com/business-services/discover-the-10-regions-of-los-angeles">Image source</a>
+    </footer>
+  </div>
+
+  <div class="grid-item">
+    <h2>Classification of the city</h2>
+    <p>The classification is both suburban and urban parts.</p>
+    <img src="img\la-sub.jpeg" alt="suburban">
+    <footer>
+      <a href="https://www.latimes.com/opinion/story/2020-07-18/suburban-sprawl-wont-fix-income-inequality-or-the-housing-shortage">Image source</a>
+    </footer>
+  </div>
+
+  <div class="grid-item">
+    <h2>Income Level</h2>
+    <p>The median house income for Los Angeles County in 2021 is about $77,456</p>
+    <img src="img\la-income.jpg" alt="income">
+    <footer>
+      <a href="https://www.gapminder.org/fw/income-levels/">Image source</a>
+    </footer>
+  </div>
+  <script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        var firstName = document.getElementById("first-name").value;
+        var lastName = document.getElementById("last-name").value;
+        var email = document.getElementById("email").value;
+        var confirmEmail = document.getElementById("confirm-email").value;
+
+        if (email !== confirmEmail) {
+            alert("Email addresses do not match.");
+            return; 
+        }
+
+        var comments = document.getElementById("comments").value;
+
+        alert("Form submitted successfully!\nComments: " + comments);
+        document.getElementById("myForm").reset();
+    });
+</script>
+</body>
+</html>

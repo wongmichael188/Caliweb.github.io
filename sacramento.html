@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sacramento</title>
+</head>
+<body>
+
+<!--Navigation -->
+<nav>
+  <div class="nav-title">California</div>
+  <ul class="nav-items">
+      <li class="nav-item"><a href="index.html">Home</a></li>
+      <li class="nav-item"><a href="locations.html">Locations</a></li>
+      <li class="nav-item collapse-arrow">Visiting</a>
+          <ul class="collapse-content">
+              <li><a href="losangeles.html">Los Angeles</a></li>
+              <li><a href="orangecounty.html">Orange County</a></li>
+              <li><a href="sacramento.html">Sacramento</a></li>
+          </ul>
+      </li>
+      <li class="nav-item"><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+ <!--Body Text-->
+ <div class="big-rectangular-box">
+  <div class="grid-item">
+    <h2>Sacramento</h2>
+    <p>The capital of California has a population of 1.5 million people.</p>
+    <img src="img\sc-logo.png" alt="logo">
+    <footer>
+      <a href="https://arts.cityofsacramento.org/about-us/logo-downloads">Image source</a>
+    </footer>
+  </div>
+
+  <div class="grid-item">
+    <h2>The year the city incorporated</h2>
+    <p>Sacramento is incorporated in the year of of 1850.</p>
+    <img src="img\sc-incorp.jpg" alt="incorporated">
+    <footer>
+      <a href="https://www.parks.ca.gov/?page_id=24560">Image source</a>
+    </footer>
+  </div>
+
+  <div class="grid-item">
+    <h2>Region of the state in which the city is located</h2>
+    <p>The region of Sacramento is located in nothern California.</p>
+    <img src="img\sc-region.jpg" alt="region">
+    <footer>
+      <a href="https://oag.ca.gov/gambling/game/sacramento">Image source</a>
+    </footer>
+  </div>
+
+  <div class="grid-item">
+    <h2>Classification of the city</h2>
+    <p>Sacramento is classified as both suburban and Urban parts.</p>
+    <img src="img\sc-urban.jpg" alt="urban">
+    <footer>
+      <a href="https://archive.curbed.com/2017/7/11/15949960/sacramento-real-estate-development-bay-area">Image source</a>
+    </footer>
+  </div>
+
+  <div class="grid-item">
+    <h2>Income Level</h2>
+    <p>The median household income level in Sacramento is $71,074.</p>
+    <img src="img\sc-income.webp" alt="income">
+    <footer>
+      <a href="https://www.shutterstock.com/image-vector/flat-three-levels-tiny-persons-wealth-1549568342">Image source</a>
+    </footer>
+  </div>
+  <script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        var firstName = document.getElementById("first-name").value;
+        var lastName = document.getElementById("last-name").value;
+        var email = document.getElementById("email").value;
+        var confirmEmail = document.getElementById("confirm-email").value;
+
+        if (email !== confirmEmail) {
+            alert("Email addresses do not match.");
+            return; 
+        }
+
+        var comments = document.getElementById("comments").value;
+
+        alert("Form submitted successfully!\nComments: " + comments);
+        document.getElementById("myForm").reset();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Orange County</title>
+</head>
+<body>
+
+<!--Navigation -->
+<nav>
+  <div class="nav-title">California</div>
+  <ul class="nav-items">
+      <li class="nav-item"><a href="index.html">Home</a></li>
+      <li class="nav-item"><a href="locations.html">Locations</a></li>
+      <li class="nav-item collapse-arrow">Visiting</a>
+          <ul class="collapse-content">
+              <li><a href="losangeles.html">Los Angeles</a></li>
+              <li><a href="orangecounty.html">Orange County</a></li>
+              <li><a href="sacramento.html">Sacramento</a></li>
+          </ul>
+      </li>
+      <li class="nav-item"><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+ <!--Body Text-->
+ <div class="big-rectangular-box">
+  <div class="grid-item">
+    <h2>Orange County</h2>
+    <p>The population in Orange County is about 3.168 million.  </p>
+    <img src="img\oc-logo.jpg" alt="logo">
+    <footer>
+      <a href="https://www.orangecoast.com/stuff-we-love/o-c-answer-man-countys-logo-come/">Image source</a>
+    </footer>
+  </div>
+
+  <div class="grid-item">
+    <h2>The year the city incorporated</h2>
+    <p>Orange County was incorporated in the year of August 1, 1889.</p>
+    <img src="img\oc-incorp.jpg" alt="incorporation">
+    <footer>
+      <a href="https://www.preserveorangecounty.org/places/2018/10/4/orange-plaza-historic-district">Image source</a>
+    </footer>
+  </div>
+  <div class="grid-item">
+    <h2>Region of the state in which the city is located</h2>
+    <p>The region of Orange County is located in the Southern side of California.</p>
+    <img src="img\oc-region.jpg" alt="region">
+    <footer>
+      <a href="https://www.orangecountyinsiders.com/resources/orange-county-cities">image source</a>
+    </footer>
+  </div>
+
+  <div class="grid-item">
+    <h2>Classification of the city</h2>
+    <p>Orange County is classified as both suburban and Urban parts.</p>
+    <img src="img\oc-urban.webp" alt="urban">
+    <footer>
+      <a href="https://www.ocregister.com/2020/02/05/busting-the-myth-of-orange-countys-suburban-sprawl/">Image source</a>
+    </footer>
+  </div>
+
+  <div class="grid-item">
+    <h2>Income Level</h2>
+    <p>The median household income in 2021 is $100,485.</p>
+    <img src="img\oc-income.png" alt="income">
+    <footer>
+      <a href="https://talsolutions.com/framework/2021/05/does-income-level-impact-customer-experience/">Image source</a>
+    </footer>
+  </div>
+  <script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        var firstName = document.getElementById("first-name").value;
+        var lastName = document.getElementById("last-name").value;
+        var email = document.getElementById("email").value;
+        var confirmEmail = document.getElementById("confirm-email").value;
+
+        if (email !== confirmEmail) {
+            alert("Email addresses do not match.");
+            return; 
+        }
+
+        var comments = document.getElementById("comments").value;
+
+        alert("Form submitted successfully!\nComments: " + comments);
+        document.getElementById("myForm").reset();
+    });
+</script>
+</body>
+</html>

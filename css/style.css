@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../img/pxfuel.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    background-color: rgb(248, 214, 214);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li {
+    margin: 0 10px;
+    margin-right: 55px;
+}
+
+nav a {
+    color: #716d6d;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+nav a:hover {
+    background-color: #e6d4d4;
+}
+
+.nav-title {
+    color: #4c4343;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 75px;
+    padding-right: 20px;
+    
+}
+
+/* Styling for the dropdown menu */
+.collapse-content {
+    display: none;
+    position: absolute;
+    background-color: #311414;
+    padding: 10px;
+}
+
+.nav-item:hover .collapse-content {
+    display: block;
+}
+
+.collapse-content a {
+    display: block;
+}
+
+/* Styling for the collapse arrow */
+.collapse-arrow::after {
+    content: '\25BE'; /* Unicode for the downward-pointing triangle (▾) */
+    position: absolute;
+    top: 3.7%;
+    left: 1665px;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.horizontal-box {
+    display: flex;
+    align-items: center; /* Optional: Center the content vertically */
+    justify-content: space-between; /* Optional: Distribute space between items */
+    border: 1px solid #ccc; /* Optional: Add a border for visualization */
+    padding: 85px; /* Optional: Add padding to the container */
+    margin-left:140px;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+
+    /* Set the desired width for the horizontal box */
+    width: 80%; /* You can adjust the percentage value or use pixels (e.g., width: 500px;) */
+}
+
+.box-image,
+.box-image-2,
+.box-image-3 {
+    width: 25%; /* Adjust the width of the image as needed */
+    height: 25%; /* Adjust the height of the image as needed */
+}
+
+.horizontal-box h2,
+.horizontal-box p,
+.horizontal-box ol,
+.horizontal-box ul {
+    margin: 0;
+    color: rgb(28, 24, 24);
+        }
+
+/*Los Angeles page*/ 
+.big-rectangular-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
+    grid-gap: 15px; /* Space between grid items */
+    background-color: transparent; /* Set the background color to transparent */
+            /* Additional styling for the box (borders, shadows, etc.) */
+    border: none; /* Remove the border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            /* Add padding and other styles for the content inside the box */
+    padding: 20px;
+    }
+        
+    /* Styling for grid items (boxes)*/
+.grid-item {
+    padding: 130px;
+     background-color: rgba(255, 255, 255, 0.7); /* Set the background color with opacity */
+            /* Optional: You can use rgba() to set the background color with an alpha (opacity) value */
+            /* For example, rgba(255, 255, 255, 0.7) sets the color to white with 70% opacity */
+    border: 1px solid #999;
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+        
+        
+.grid-item p {
+    opacity: 0.9;
+    }
+        
+.grid-item img {
+    width: 60%; 
+    height: 70%; 
+}
+
+/*Styling for Form*/
+.form-container {
+    width: 500px;
+    padding: 46px;
+    background-color: rgba(255, 255, 255, 0.4); 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0.8;
+    text-align: center;
+    margin-left: 520px;
+}
+
+.form-field {
+    margin-bottom: 40px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/*form table*/
+table {
+    width: 60%;
+    margin: 80px auto;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    padding: 100px;
+    float: right;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/*Reference*/
+.reference-list {
+    margin: 20px;
+    padding: 20px;
+    list-style: decimal; 
+    color: rgb(16, 12, 12);
+}
+
+.reference-item {
+    margin: 0 auto;
+    line-height: 1.4;
+}
+
+h2 {
+    color: rgb(111, 71, 71);
+    padding: 20px;
+}
