@@ -79,7 +79,7 @@ nav a:hover {
     justify-content: space-between; /* Optional: Distribute space between items */
     border: 1px solid #ccc; /* Optional: Add a border for visualization */
     padding: 85px; /* Optional: Add padding to the container */
-    margin-left:80px;
+    margin-left:20px;
     margin-top: 20px;
     flex-direction: column;
     align-items: center;
