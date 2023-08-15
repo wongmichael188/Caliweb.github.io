@@ -38,7 +38,7 @@ nav a:hover {
     background-color: #e6d4d4;
 }
 
-.nav-title {
+#nav-title {
     color: #4c4343;
     font-size: 40px;
     font-weight: bold;
@@ -168,7 +168,7 @@ textarea {
 }
 
 /*form table*/
-table {
+#mytable {
     width: 60%;
     margin: 80px auto;
     border-collapse: collapse;
