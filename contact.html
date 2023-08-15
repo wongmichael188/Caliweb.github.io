@@ -27,7 +27,8 @@
 
  <!--Body Text-->
  <div class="form-container">
-    <form id="myForm">
+    <section>
+    <form>
         <div class="form-field">
             <label for="first-name">First Name:</label>
             <input type="text" id="first-name" name="first-name" required placeholder="First Name">
@@ -49,10 +50,12 @@
             <textarea id="comments" name="comments" placeholder="Here is a textbox for you to ask questions." rows="4"></textarea>
         </div>
         <button type="submit">Submit</button>
+    </section>
     </form>
 </div>
 
-<div>
+<div id="mytable">
+    <section>
     <table>
         <tr>
             <th>Reliable Cars</th>
@@ -75,9 +78,11 @@
             <td>Friends</td>
         </tr>
     </table>
+</section>
 </div>
 
 <h4>References</h4>
+<aside>
 <ol class="reference-list">
     <li class="reference-item">(n.d.). FACTS ABOUT LA. DISCOVER LOS ANGELES, Retrieved from
         <a href="https://www.discoverlosangeles.com/media/facts-about-la" target="_blank">DiscoverLA</a>
@@ -202,6 +207,7 @@
         <a href="https://www.pxfuel.com/en/desktop-wallpaper-isyza" target="_blank">BG</a>
     </li>
 </ol>
+</aside>
 <script>
     document.getElementById("myForm").addEventListener("submit", function(event) {
         event.preventDefault();
