@@ -68,7 +68,7 @@ nav a:hover {
     content: '\25BE'; /* Unicode for the downward-pointing triangle (▾) */
     position: absolute;
     top: 3.7%;
-    left: 1665px;
+    left: 1700px;
     transform: translateY(-50%);
     font-size: 20px;
 }
