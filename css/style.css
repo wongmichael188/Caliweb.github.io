@@ -172,13 +172,13 @@ textarea {
     width: 60%;
     margin: 80px auto;
     border-collapse: collapse;
-    border: 1px solid #ccc;
     padding: 100px;
     float: right;
 }
 
 th, td {
     border: 1px solid #ccc;
+    position: relative;
     padding: 10px;
     text-align: center;
     color: white;
